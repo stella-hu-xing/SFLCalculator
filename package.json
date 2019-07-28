@@ -1,0 +1,24 @@
+{
+  "name": "sflcalculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "ts-node ./src/main.ts "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xinghu0164/SFLCalculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xinghu0164/SFLCalculator/issues"
+  },
+  "homepage": "https://github.com/xinghu0164/SFLCalculator#readme",
+  "devDependencies": {
+    "@types/node": "^12.6.8",
+    "typescript": "^3.5.3"
+  }
+}
