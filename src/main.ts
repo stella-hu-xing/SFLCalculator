@@ -1,13 +1,17 @@
 import data from "./data/results.json"
-import { calculateFrequencyDict } from "./calculator";
+import { calculateFrequencyDict, sortDict } from "./calculator";
 import {Item} from './number'
 
 const results = data as Item[]
 
+// get all winning frequency
 const allWinnings = results.map(i=>i.winning)
-// get all winning frequency
-console.log(calculateFrequencyDict(allWinnings))
+const dic = calculateFrequencyDict(allWinnings)
+console.log(sortDict(dic))
 
+console.log("----------")
+
+// get all frequency
 const allNumbers = results.map(i=>i.winning.concat(i.bonus))
-// get all winning frequency
-console.log(calculateFrequencyDict(allNumbers))
+const dic2 = calculateFrequencyDict(allNumbers)
+console.log(sortDict(dic2))
